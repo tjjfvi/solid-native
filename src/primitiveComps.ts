@@ -2,7 +2,6 @@ import * as solid from "solid-js";
 
 import { createComponent } from "./internals";
 import { wrapSolidComponent } from "./wrapSolidComponent";
-import { wrapSolidJsxComponent } from "./wrapSolidJsxComponent";
 
 export type Children = JSX.Element | (() => Children) | Children[];
 
@@ -36,7 +35,7 @@ export const Match = wrapSolidComponent(solid.Match) as never as <T>(
 
 export function Dynamic<T>(
   props: T & {
-    component?: solid.Component<T> | string | keyof JSX.IntrinsicElements;
+    component?: (props: T) => Children,
   }
 ): JSX.Element {
   const [p, others] = solid.splitProps(props, ["component"]);
