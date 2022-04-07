@@ -33,11 +33,11 @@ export const Match = wrapSolidComponent(solid.Match) as never as <T>(
   props: MatchProps<T>
 ) => JSX.Element;
 
-export function Dynamic<T>(
+export const Dynamic = wrapSolidComponent(<T>(
   props: T & {
     component?: (props: T) => Children,
   }
-): JSX.Element {
+): JSX.Element => {
   const [p, others] = solid.splitProps(props, ["component"]);
   return solid.createMemo(() => createComponent(p.component, others)) as never;
-}
+})
