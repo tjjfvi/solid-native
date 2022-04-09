@@ -15,9 +15,10 @@ function NAME(props){
   return COMP(props)
 }
 const COMP = require("${importSource}").wrapSolidJsxComponent(
-  function NAME( ARGS ){ BODY }
+  function NAME( ARGS ){ BODY },
+  undefined,
+  NAME,
 )
-Object.assign(NAME, COMP)
 `);
 
 module.exports = function main(babel, opts) {
