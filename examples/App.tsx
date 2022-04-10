@@ -1,11 +1,14 @@
-import { StatusBar } from "expo-status-bar";
+// @solid
+
 import { StyleSheet, Text, View } from "react-native";
+import { createSignal } from "solid-js";
 
 export default function App() {
+  const [counter, setCounter] = createSignal(0);
+  setInterval(() => setCounter((_) => _ + 1), 1000);
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text>{`Counter: ${counter()}`}</Text>
     </View>
   );
 }
