@@ -10,7 +10,7 @@
     "prepack": "npm run build"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@babel/preset-react": "^7.16.7",
     "@babel/template": "^7.16.7",
