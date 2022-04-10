@@ -3,10 +3,13 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import { createEffect, createSignal, Dynamic, For, Show } from "solid-native";
 import styles from "./appStyles";
-import { Counter } from "./examples";
+import { Counter, Periodic, Todo, Interop } from "./examples";
 
 const examples = {
   Counter,
+  Periodic,
+  Todo,
+  Interop,
 };
 
 type ExampleName = keyof typeof examples;
