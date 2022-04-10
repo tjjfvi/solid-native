@@ -1,3 +1,4 @@
 node_modules
 babel-preset-react.js
 dist
+examples-dist

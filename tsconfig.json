@@ -13,5 +13,6 @@
     "declarationMap": true,
     "stripInternal": true,
     "rootDir": "src"
-  }
+  },
+  "exclude": ["dist", "examples"]
 }
