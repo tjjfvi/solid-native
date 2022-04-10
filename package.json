@@ -1,15 +1,32 @@
 {
   "name": "solid-native",
   "version": "0.0.7",
-  "description": "",
+  "description": "Use solid.js to develop native mobile applications",
   "main": "dist/index.js",
+  "homepage": "https://solid-native.t6.fyi/",
+  "repository": "https://github.com/tjjfvi/solid-native",
+  "keywords": [
+    "solid",
+    "solidjs",
+    "ui",
+    "reactive",
+    "react-native",
+    "ios",
+    "android",
+    "solidhack",
+    "best_ecosystem"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "fmt": "prettier --write src",
     "build": "tsc",
     "prepack": "npm run build"
   },
-  "author": "",
+  "author": "tjjfvi",
+  "contributors": [
+    "tjjfvi",
+    "vjjft"
+  ],
   "license": "MIT",
   "dependencies": {
     "@babel/preset-react": "^7.16.7",
