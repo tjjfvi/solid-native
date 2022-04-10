@@ -9,6 +9,9 @@ export {
   Children,
 } from "./primitiveComps";
 
+/** @internal */
+export { createComponent, memo } from "./internals";
+
 export * from "solid-js";
 export * from "solid-js/store";
 

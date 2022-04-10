@@ -10,6 +10,7 @@
     "outDir": "dist",
     "sourceMap": true,
     "declaration": true,
-    "declarationMap": true
+    "declarationMap": true,
+    "stripInternal": true
   }
 }

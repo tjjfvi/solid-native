@@ -4,7 +4,7 @@ const _reactPreset = require("@babel/preset-react").default;
 const _solidPreset = require("babel-preset-solid");
 const template = require("@babel/template").default;
 
-const importSource = `solid-native/dist/internals`
+const importSource = "solid-native"
 
 const wrapComponent = template.expression(`
 require("${importSource}").wrapSolidJsxComponent(EXPR, NAME)

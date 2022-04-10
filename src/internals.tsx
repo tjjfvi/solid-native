@@ -8,10 +8,6 @@ import { keyForProps } from "./keyForProps";
 import { reactCompBridge } from "./reactCompBridge";
 import { $solidVersion } from "./symbols";
 
-export * from "solid-js";
-
-export { wrapSolidJsxComponent } from "./wrapSolidJsxComponent";
-
 // Instantiates a component into an element (using solid.js-style props)
 export function createComponent(Comp: any, solidProps: any) {
   if ($solidVersion in Comp)
