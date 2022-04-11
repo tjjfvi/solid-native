@@ -9,6 +9,8 @@ This results in an approach to native development with the ergonomics and
 familiarity known and expected by Solid developers, combined with the addition
 of tooling and libraries from the React Native ecosystem.
 
+Check out the [demo app](https://github.com/tjjfvi/solid-native/tree/main/examples)!
+
 ## Goals
 
 To make native development using Solid comparable to web development using
