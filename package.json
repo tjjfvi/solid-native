@@ -1,6 +1,6 @@
 {
   "name": "solid-native",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Use solid.js to develop native mobile applications",
   "main": "dist/index.js",
   "homepage": "https://solid-native.t6.fyi/",
