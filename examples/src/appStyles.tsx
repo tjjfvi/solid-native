@@ -5,11 +5,8 @@ import { StyleSheet } from "react-native";
 export default StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
-    // borderWidth: 1,
-    // borderColor: "cyan",
     marginTop: 50,
     marginBottom: 20,
   },
@@ -27,15 +24,10 @@ export default StyleSheet.create({
   },
 
   exampleBack: {
-    // flex: 0,
     width: "100%",
-    // marginBottom: "-100%",
     justifyContent: "flex-start",
     alignContent: "space-around",
     flexDirection: "row",
-    // lineHeight: 24,
-    // borderWidth: 1,
-    // borderColor: "blue",
   },
   exampleBackText: {
     flex: 0,
@@ -44,8 +36,6 @@ export default StyleSheet.create({
     fontSize: 16,
     fontFamily: "Verdana",
     color: "#888",
-    // borderWidth: 1,
-    // borderColor: "red",
     paddingHorizontal: 10,
   },
   exampleTitle: {
@@ -53,26 +43,18 @@ export default StyleSheet.create({
     flexDirection: "row",
     justifyContent: "center",
     marginBottom: 5,
-    // alignContent: "space-around",
-    // borderWidth: 1,
-    // borderColor: "blue",
   },
   exampleTitleText: {
     fontSize: 20,
     fontFamily: "Verdana",
     color: "#444",
-    // width: "100%",
     textAlign: "center",
-    // borderWidth: 1,
-    // borderColor: "green",
   },
   exampleContainer: {
     flexShrink: 1,
     flexGrow: 1,
     justifyContent: "center",
     alignItems: "center",
-    // borderWidth: 1,
-    // borderColor: "purple",
     width: "100%",
     borderTopWidth: 1,
     borderTopColor: "#888",

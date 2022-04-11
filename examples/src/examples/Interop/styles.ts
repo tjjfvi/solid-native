@@ -3,7 +3,6 @@ import { StyleSheet } from "react-native";
 export default StyleSheet.create({
   nestedContainer: {
     flexGrow: 1,
-    // marginTop: 36,
     justifyContent: "flex-start",
     backgroundColor: "#ccc",
     paddingVertical: 12,
@@ -13,8 +12,6 @@ export default StyleSheet.create({
     alignItems: "center",
   },
   nestedSolidContainer: {
-    // flexGrow: 1,
-    // marginVertical: 60,
     justifyContent: "space-around",
     backgroundColor: "#aaf",
     padding: 10,
@@ -23,8 +20,6 @@ export default StyleSheet.create({
     alignItems: "center",
   },
   nestedReactContainer: {
-    // flexGrow: 1,
-    // marginVertical: 60,
     justifyContent: "space-around",
     backgroundColor: "#faa",
     padding: 10,

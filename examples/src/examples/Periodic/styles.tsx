@@ -6,8 +6,6 @@ export default StyleSheet.create({
     flexGrow: 1,
     marginVertical: 30,
     justifyContent: "space-around",
-    // borderWidth: 1,
-    // borderColor: "orange",
   },
   counterEvery: {
     fontStyle: "italic",

@@ -1,7 +1,7 @@
 // @solid
 
 import { View, Text, TouchableOpacity } from "react-native";
-import { createEffect, createSignal, Dynamic, For, Show } from "solid-native";
+import { createSignal, Dynamic, For, Show } from "solid-native";
 import styles from "./appStyles";
 import { Counter, Periodic, Todo, Interop } from "./examples";
 
@@ -20,7 +20,6 @@ export default function App() {
   const [selectedExampleName, setSelectedExampleName] =
     createSignal<ExampleName>();
 
-  createEffect(() => console.log(selectedExampleName()));
   return (
     <View style={{ ...styles.container, marginTop: 50, marginBottom: 20 }}>
       <Show
@@ -46,7 +45,6 @@ export default function App() {
             <Text style={styles.exampleBackText}>{"← Back"}</Text>
           </TouchableOpacity>
         </View>
-        {/* <View style={styles.exampleTitleView}> */}
         <View style={styles.exampleTitle}>
           <Text style={styles.exampleTitleText}>{selectedExampleName()}</Text>
         </View>

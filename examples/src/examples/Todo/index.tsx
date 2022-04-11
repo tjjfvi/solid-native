@@ -20,8 +20,6 @@ import styles from "./styles";
 
 function createLocalStore<T>(initState: T): [Store<T>, SetStoreFunction<T>] {
   const [state, setState] = createStore(initState);
-  // if (localStorage.todos) setState(JSON.parse(localStorage.todos));
-  // createEffect(() => (localStorage.todos = JSON.stringify(state)));
   onMount(async () => {
     const item = await AsyncStorage.getItem("todos");
     if (item) setState(JSON.parse(item));
