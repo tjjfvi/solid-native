@@ -2,6 +2,7 @@
   "name": "solid-native",
   "version": "0.1.2",
   "description": "Use solid.js to develop native mobile applications",
+  "info": "Solid Native expands the Solid ecosystem to include development of native mobile applications.",
   "main": "dist/index.js",
   "homepage": "https://solid-native.t6.fyi/",
   "repository": "https://github.com/tjjfvi/solid-native",
@@ -22,10 +23,16 @@
     "build": "tsc",
     "prepack": "npm run build"
   },
-  "author": "tjjfvi",
+  "author": "tjjfvi <t6@t6.fyi>",
   "contributors": [
-    "tjjfvi",
-    "vjjft"
+    {
+      "name": "tjjfvi",
+      "email": "t6@t6.fyi"
+    },
+    {
+      "name": "vjjft",
+      "email": "vjjft@vjjft.com"
+    }
   ],
   "license": "MIT",
   "dependencies": {
