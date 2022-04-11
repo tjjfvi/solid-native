@@ -4,7 +4,7 @@ export default StyleSheet.create({
   countersContainer: {
     flex: 1,
     flexGrow: 1,
-    marginVertical: 60,
+    marginVertical: 30,
     justifyContent: "space-around",
     // borderWidth: 1,
     // borderColor: "orange",
@@ -17,5 +17,6 @@ export default StyleSheet.create({
     fontWeight: "bold",
     fontFamily: "Verdana",
     fontSize: 20,
+    lineHeight: 24,
   },
 });
