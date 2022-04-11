@@ -2,7 +2,7 @@ name: Update Snack
 
 on:
   push:
-    branches: [sne]
+    branches: [main]
 
 jobs:
   deploy:
