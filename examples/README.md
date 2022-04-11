@@ -14,6 +14,9 @@ Solid's [counter example](https://www.solidjs.com/examples/counter) rewritten in
 
 ## [Periodic](https://github.com/tjjfvi/solid-native/tree/sne/examples/src/examples/Periodic)
 
+A variation on the Counter example, where the counters use a `Show` to display
+periodically.
+
 ## [Todo](https://github.com/tjjfvi/solid-native/tree/sne/examples/src/examples/Todo)
 
 This is simply Solid's [todo example](https://www.solidjs.com/examples/todos)
