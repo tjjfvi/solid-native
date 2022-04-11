@@ -1,0 +1,36 @@
+name: Update Snack
+
+on:
+  push:
+    branches: [sne]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('examples/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - run: cd examples; npm i; npm run build-snack
+
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: examples-dist
+          destination_dir: examples-dist
+          publish_branch: examples-dist
+          force_orphan: true
+
+      - run: curl "https://snackager.expo.io/git?branch=examples-dist&repo=https%3A%2F%2Fgithub.com%2Ftjjfvi%2Fsolid-native&subpath=examples-dist"
