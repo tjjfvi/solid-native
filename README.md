@@ -1,6 +1,6 @@
 # Solid Native
 
-Solid Native expands the [Solid](https://www.solidjs.com] ecosystem to include
+Solid Native expands the [Solid](https://www.solidjs.com) ecosystem to include
 development of native mobile applications.
 
 `solid-native` applies `solid-js` as a layer over React Native, making available
