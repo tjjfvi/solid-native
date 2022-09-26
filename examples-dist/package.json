@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.17.3",
+    "expo": "^44.0.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-native": "0.64.3",
+    "react-native-web": "0.17.1",
+    "solid-native": "~0.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.12.9",
+    "@types/react": "~17.0.21",
+    "@types/react-native": "~0.64.12",
+    "prettier": "^2.6.2",
+    "typescript": "~4.3.5"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "build-snack": "./build-snack.sh"
+  },
+  "version": "1.0.0",
+  "private": true,
+  "name": "solid-native-examples"
+}
